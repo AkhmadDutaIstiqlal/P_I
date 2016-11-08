@@ -36,7 +36,7 @@
         <div style="width:199px; height:auto; float:left; background:#000; padding:15px 0 15px 0; color:#FFF; font-size:17px">
         	<table align="center" width="200">
             <tr>
-            	<td align="center">Silahkan  Pilih Pesanan Anda</td>
+            	<td align="center">Selamat Datang Di Restoran Merah Putih</td>
             </tr>
             <tr>
             	<td align="center"><?php echo $_SESSION['username'] ?></td>
@@ -48,7 +48,7 @@
             	<td align="left"><a href="resep.php" style="color:#F00; text-decoration:none;">Resep</a></td>
             </tr>
             <tr>
-            	<td align="left"><a href="proses/logout.php" style="color:#F00; text-decoration:none;">Keluar</a></td>
+            	<td align="left"><a href="login.php" style="color:#F00; text-decoration:none;">login</a></td>
             </tr>
             </table>
         </div>
@@ -70,47 +70,52 @@
                 </tr>
                 <tr>
                 	<td><input type="checkbox" id="meno" onclick="makanan1()" /><input type="hidden" id="meno1" name="meno" /></td>
-                    <td>Meon Kucin Haro</td>
+                    <td>Bento Panda</td>
                     <td align="center">: <input type="text" class="input" name="pesan1" id="1"  /></td>
                 </tr>
                 <tr>
                 	<td><input type="checkbox" id="hataru" onclick="makanan2()" /><input type="hidden" id="hataru1" name="hataru" /></td>
-                    <td>Hataru Kobisa</td>
+                    <td>Sushi Ebi Tempura Roll</td>
                     <td align="center">: <input type="text" class="input" name="pesan2" id="2" /></td>
                 </tr>
                 <tr>
                 	<td><input type="checkbox" id="fuida" onclick="makanan3()" /><input type="hidden" id="fuida1" name="fuida" /></td>
-                    <td>Fuida Takara</td>
+                    <td>Spagetthi</td>
                     <td align="center">: <input type="text" class="input" name="pesan3" id="3" /></td>
                 </tr>
                 <tr>
                 	<td><input type="checkbox" id="suishi" onclick="makanan4()" /><input type="hidden" id="suishi1" name="suishi" /></td>
-                    <td>Suishi Aimana</td>
+                    <td>Suishi</td>
                     <td align="center">: <input type="text" class="input" name="pesan4" id="4" /></td>
                 </tr>
                 <tr>
                 	<td><input type="checkbox" id="rekota" onclick="makanan5()" /><input type="hidden" id="rekota1" name="rekota" /></td>
-                    <td>Rekota Datana</td>
+                    <td>Pizza</td>
                     <td align="center">: <input type="text" class="input" name="pesan5" id="5" /></td>
                 </tr>
                 <tr>
                 	<td><input type="checkbox" id="ritana" onclick="makanan6()" /><input type="hidden" id="ritana1" name="ritana" /></td>
-                    <td>Ritana Dodoshi</td>
+                    <td>Soto Ayam</td>
                     <td align="center">: <input type="text" class="input" name="pesan6" id="6" /></td>
                 </tr>
                 <tr>
                 	<td><input type="checkbox" id="ootoshi" onclick="makanan7()" /><input type="hidden" id="ootoshi1" name="ootoshi" /></td>
-                    <td>Ootashi Shisui</td>
+                    <td>Bento Sarang Burung</td>
                     <td align="center">: <input type="text" class="input"name="pesan7" id="7" /></td>
                 </tr>
                 <tr>
                 	<td><input type="checkbox"  id="daruto" onclick="makanan8()" /><input type="hidden" id="daruto1" name="daruto" /></td>
-                    <td>Doruta Shimashi</td>
+                    <td>Ramen</td>
                     <td align="center">: <input type="text" class="input" name="pesan8" id="8" /></td>
                 </tr>
                 <tr>
                 	<td><input type="checkbox"  id="iwana" onclick="makanan9()" /><input type="hidden" id="iwana1" name="iwana" /></td>
-                    <td>Iwana Hitanashi</td>
+                    <td>Gado - Gado</td>
+                    <td align="center">: <input type="text" class="input" name="pesan9" id="9" /></td>
+                </tr>
+                <tr>
+                	<td><input type="checkbox"  id="iwana" onclick="makanan9()" /><input type="hidden" id="iwana1" name="iwana" /></td>
+                    <td>Nasi Goreng Seafood</td>
                     <td align="center">: <input type="text" class="input" name="pesan9" id="9" /></td>
                 </tr>
                 <tr height="10">
@@ -133,36 +138,36 @@
         <div align="center">
         	<div style="width:900px; height:auto;">
             	<div class="img_left">
-                	<div class="img_in"><img src="img/photo1.jpg" /></div>
+                	<div class="img_in"><img src="img/bento-panda.jpg" /></div>
                     <div class="img_note">
-                    <p id="head">Bento anak anjing</p>
-                    Masakan ini kami beri nama bento anak anjing, karena dibuat dengan tampilan seperti anak anjing yang membuat makanan ini terlihat indah dan rasanya pun tidak kalah lezatnya dengan tampilannya. Selamat Mencoba
-                 <p align="right">Prize : <span>Rp.33.000,-</span></p></div>
+                    <p id="head">Bento panda</p>
+                    Mau membawa bekal nasi yang berbeda dan gizi yang lengkap? Kreasi bento panda satu ini pas banget untuk menjadi pilihan. Karbohidratnya cukup, lauknya memiliki kandungan protein, dan juga ada berbagai jenis sayuran segar.
+                 <p align="right">Prize : <span>Rp.30.000,-</span></p></div>
                 </div>
                 <div class="img_center">
                 	<div class="img_in"><img src="img/photo2.jpg" /></div>
                     <div class="img_note">
-                    <p id="head">Shusi ebi Roll</p>
-                    Masakan ini kami beri nama sushi ebi roll ini termasuk masakan khas jepang yang paling sering diminati orang atau paling sering dibeli orang pada umunya sushi ini hanya berisiskan udang.
-                 <p align="right">Prize : <span>Rp.50.000,-</span></p></div>
+                    <p id="head">Shusi Ebi Tempura Roll</p>
+                    Krenyes renyah gurih bagian luarnya dan segar di bagian tengahnya. Inilah rasa sushi yang berisi ebi tempura. Dijamin Anda jadi ketagihan karena rasa uniknya.
+                 <p align="right">Prize : <span>Rp.40.000,-</span></p></div>
                 </div>
                 <div class="img_right">
                 	<div class="img_in"><img src="img/FY0BMNBIB226AMH.MEDIUM.jpg" /></div>
                     <div class="img_note">
                     <p id="head">Spaghetti</p>
-                    mAsakan Khas Italia ini dibuat dengan bahan utamanya mie biasanya disajikan dengan saus tomat dan juga keju parmesan 
-                 <p align="right">Prize : <span>Rp.15.000,-</span></p></div>
+                    Masakan Khas Italia ini dibuat dengan bahan dasar utamanya mie biasanya disajikan dengan saus tomat dan juga keju parmesan 
+                 <p align="right">Prize : <span>Rp.12.000,-</span></p></div>
                 </div>
             </div>
             
             
             <div style="width:900px; height:auto; float:left; margin:10px 0 0 25px;">
             	<div class="img_left">
-                	<div class="img_in"><img src="img/photo4.jpg" /></div>
+                	<div class="img_in"><img src="img/Resep-sushi-jepang.jpg" /></div>
                     <div class="img_note">
-                    <p id="head">Suishi Aimana</p>
-                    Sushi ini dibuat dengan berbagai macam topping yang menghiasi bagian atas sushi seperti sayuran, daging ikan, udang, telor ikan terbang, daging sapi, dll
-                 <p align="right">Prize : <span>Rp.25.000,-</span></p></div>
+                    <p id="head">Suishi</p>
+                    Sushi merupakan salah satu makanan Jepang yang banyak digemari oleh banyak orang, baik di dalam negeri ataupun di luar negeri. Sebenarnya sushi terbuat dari nasi yang dibentuk bersama dengan lauk dan sayuran.
+                 <p align="right">Prize : <span>Rp.15.000,-</span></p></div>
                 </div>
                 <div class="img_center">
                 	<div class="img_in"><img src="img/pizza.jpg" /></div>
@@ -172,21 +177,21 @@
                  <p align="right">Prize : <span>Rp35.000,-</span></p></div>
                 </div>
                 <div class="img_right">
-                	<div class="img_in"><img src="img/photo6.jpg" /></div>
+                	<div class="img_in"><img src="img/soto2Bayam2Bponorogo.jpeg.600x0_q85_crop-smart_upscale.jpg" /></div>
                     <div class="img_note">
-                    <p id="head">Ritana Dodoshi</p>
-                    Masakan ini kami beri nama kucin meon, yang dibuat dengan tampilan seperti gambar kucing yang membuat makanan ini terlihat indah dan rasanya pun tidak kalah lezatnya dengan tampilannya. Selamat Mencoba
-                 <p align="right">Prize : <span>Rp.78.000,-</span></p></div>
+                    <p id="head">Soto Ayam</p>
+                   Tak hanya terkenal karena rasanya yang lezat, Soto juga memiliki tampilan yang indah. Makanan khas Indonesia ini paling nikmat jika di makan ketika musim hujan. Perpaduan udara yang dingin dan kuahnya yang panas adalah perpaduan yang pas bagi kita.
+                 <p align="right">Prize : <span>Rp.7.000,-</span></p></div>
                 </div>
             </div>
             
             
             <div style="width:900px; height:auto; float:left; margin:10px 0 0 25px;">
             	<div class="img_left">
-                	<div class="img_in"><img src="img/photo7.jpg" /></div>
+                	<div class="img_in"><img src="img/bento-bird-nest.jpg" /></div>
                     <div class="img_note">
-                    <p id="head">Bento Meong</p>
-                    Masakan ini kami beri nama kucin meon, yang dibuat dengan tampilan seperti gambar kucing yang membuat makanan ini terlihat indah dan rasanya pun tidak kalah lezatnya dengan tampilannya. Selamat Mencoba
+                    <p id="head">Bento Sarang Burung</p>
+                   Ingin membawa menu pasta sebagai bekal? Coba kreasi bird nest bento ini deh. Menu bekal pastamu nggak hanya jadi terlihat indah, tetapi juga lebih bergizi.
                  <p align="right">Prize : <span>Rp.32.000,-</span></p></div>
                 </div>
                 <div class="img_center">
@@ -197,11 +202,11 @@
                  <p align="right">Prize : <span>Rp.10.000,-</span></p></div>
                 </div>
                 <div class="img_right">
-                	<div class="img_in"><img src="img/photo9.jpg" /></div>
+                	<div class="img_in"><img src="img/Gado_gado.jpg" /></div>
                     <div class="img_note">
-                    <p id="head">Iwana Hitanashi</p>
-                    Masakan ini kami beri nama kucin meon, yang dibuat dengan tampilan seperti gambar kucing yang membuat makanan ini terlihat indah dan rasanya pun tidak kalah lezatnya dengan tampilannya. Selamat Mencoba
-                 <p align="right">Prize : <span>Rp.78.000,-</span></p></div>
+                    <p id="head">Gado - Gado</p>
+                   Makanan khas selanjutnya adalah gado gado. Gado gado adalah makanan khas jawa berupa sayur sayuran yang direbus dan dicampur menjadi satu. Makanan ini mempunyai bumbu khas kacang tanah yang di haluskan.
+                 <p align="right">Prize : <span>Rp.5.000,-</span></p></div>
                 </div>
                 
                 <div style="width:900px; height:auto; float:left; margin:10px 0 0 25px;">
