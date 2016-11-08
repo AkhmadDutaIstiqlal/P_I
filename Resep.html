@@ -1,8 +1,3 @@
-<?php
-session_start();
-if(isset($_SESSION['username']))
-{
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -47,13 +42,13 @@ if(isset($_SESSION['username']))
             	<td align="center"><?php echo $_SESSION['username'] ?></td>
             </tr>
             <tr>
-            	<td align="left"><a href="proses/home.php" style="color:#F00; text-decoration:none;">Home</a></td>
+            	<td align="left"><a href="home.html" style="color:#F00; text-decoration:none;">Home</a></td>
             </tr>
             <tr>
-            	<td align="left"><a href="proses/resep.php" style="color:#F00; text-decoration:none;">Resep</a></td>
+            	<td align="left"><a href="resep.html" style="color:#F00; text-decoration:none;">Resep</a></td>
             </tr>
             <tr>
-            	<td align="left"><a href="proses/login.php" style="color:#F00; text-decoration:none;">login</a></td>
+            	<td align="left"><a href="login.php" style="color:#F00; text-decoration:none;">login</a></td>
             </tr>
             </table>
         </div>
